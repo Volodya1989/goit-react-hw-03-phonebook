@@ -8,6 +8,15 @@ class ContactForm extends Component {
     name: "",
     number: "",
   };
+  // componentDidMount() {
+  //   if (JSON.parse(localStorage.getItem("contacts"))) {
+  //     console.log(
+  //       "data from localStorage: ",
+  //       JSON.parse(localStorage.getItem("contacts"))
+  //     );
+  //   }
+  // }
+
   handleOnChange = (e) => {
     const { name, value } = e.currentTarget;
     this.setState({
