@@ -23,7 +23,7 @@ class App extends Component {
     }
   }
   componentDidUpdate(prevProps, prevState) {
-    if (this.state.contacts !== prevState) {
+    if (this.state.contacts !== prevState.contacts) {
       if (JSON.parse(localStorage.getItem("contacts"))) {
         localStorage.setItem("contacts", JSON.stringify(this.state.contacts));
       } else {
